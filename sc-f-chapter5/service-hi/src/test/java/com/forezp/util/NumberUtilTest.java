@@ -12,8 +12,27 @@ public class NumberUtilTest {
     private NumberUtil numberUtil;
 
     @Test(timeout = 20000)
-    public void getString(){
+    public void getStringTest1(){
         String str = numberUtil.getString(1);
+        System.out.println(str);
+    }
+
+    @Test(timeout = 20000)
+    public void getStringTest2(){
+        String str = numberUtil.getString(10);
+        System.out.println(str);
+    }
+
+    @Test(timeout = 20000)
+    public void getStringTest3(){
+        String str = numberUtil.getString(100);
+        System.out.println(str);
+    }
+
+
+    @Test(timeout = 20000)
+    public void getStringTest4(){
+        String str = numberUtil.getString2(100);
         System.out.println(str);
     }
 }
